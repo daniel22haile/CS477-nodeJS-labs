@@ -6,8 +6,10 @@
                                 Its callback is put at the front of the event queue
                                 Execute beore any I/O events or timers.
                                 It's also called before the event loop is processed.
+
    - setImmediate(callback) is when ever we call it, it's call back function is placed in the **check phase** of the next queue.
-                            
+
+    Generally, nextTick execute at next tick event loop where as immediate will be called only after I/O callback and polling phase                    
 3. Name 10 global modules/methods available in Node environment.s
    - Node.js with global objects
       - process
