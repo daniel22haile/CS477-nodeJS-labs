@@ -4,7 +4,7 @@
 2. Explain the difference between process.nextTick and setImmediate?
    - process.nextTick(callback) is a method which adds the callback function to the start of the next event queue.
                                 Its callback is put at the front of the event queue
-                                Execute beore any I/O events or timers
+                                Execute beore any I/O events or timers.
                                 It's also called before the event loop is processed.
    - setImmediate(callback) is when ever we call it, it's call back function is placed in the **check phase** of the next queue.
                             
