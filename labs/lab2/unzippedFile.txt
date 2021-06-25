@@ -1,0 +1,2 @@
+Hello, this is Daniel.
+This text file is for demo purpose, I just want to zip and unzip it.
