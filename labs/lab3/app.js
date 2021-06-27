@@ -32,6 +32,6 @@ http.createServer((req, res) => {
         });
     }
 
-}).listen(3010, function() {
+}).listen(3000, function() {
     console.log('server listening on port 3000');
 });
