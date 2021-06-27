@@ -22,15 +22,16 @@ http.createServer((req, res) => {
             textBody.push(chunk);
         })
         req.on('end', function() {
-            const textBody = Buffer.concat(textBody).toString();
-            console.log(textBody);
-            fs.writeFile('myText.txt', function(err) {
-                if (err) res.write('error');
+            const testParse = Buffer.concat(textBody).toString();
+            console.log(testParse);
+
+            fs.writeFile('myText.txt', testParse.split('=')[1], function(err) {
+                if (err) res.write('sorry, try again!');
                 else res.end('text saved successfully');
             });
         });
     }
 
-}).listen(3451, function() {
-    console.log('server listening on port 3131');
+}).listen(3010, function() {
+    console.log('server listening on port 3000');
 });
