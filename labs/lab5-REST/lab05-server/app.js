@@ -15,7 +15,7 @@ const PORT = app.get('port');
 
 //todo -4. middleware
 app.use(express.json()); //this middleware is used to makesure -- req.body
-app.use(bookRouter());
+app.use(bookRouter);
 
 app.use((req, res, next) => {
     res.status(404).json({ error: req.url + ' API not supported!' });

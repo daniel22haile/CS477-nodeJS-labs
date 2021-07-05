@@ -91,9 +91,9 @@ function attachSigleBook(parentNode, book) {
     titleTd.textContent = book.publishedDate;
     tr.appendChild(publishedDateTd);
 
-    const authorTd = document.createElement('td');
-    titleTd.textContent = book.author;
-    tr.appendChild(authorTd);
+    // const authorTd = document.createElement('td');
+    // titleTd.textContent = book.author;
+    // tr.appendChild(authorTd);
 
     const authorTd = document.createElement('td');
     titleTd.textContent = book.author;
